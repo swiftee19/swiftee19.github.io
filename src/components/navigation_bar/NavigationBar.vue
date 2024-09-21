@@ -2,13 +2,21 @@
 import { NavigationBarButtonList } from './NavigationBarButtonList'
 import NavigationBarButton from './NavigationBarButton.vue'
 import getRandomGreetingMessage from './GreetingMessageList'
+import GreetingMessageAlphabet from './GreetingMessageAlphabet.vue'
 
-const greetingMessage = getRandomGreetingMessage()
+const greetingMessage = getRandomGreetingMessage() + ', Visitor!'
+const greetingMessageLetters = greetingMessage.split('')
 </script>
 
 <template>
   <nav>
-    <span class="greeting">{{ greetingMessage }}, Visitor!</span>
+    <span class="greeting">
+      <GreetingMessageAlphabet
+        v-for="(letter, index) in greetingMessageLetters"
+        :key="index"
+        :alphabet="letter"
+      />
+    </span>
     <div class="buttons">
       <NavigationBarButton
         v-for="buttonData in NavigationBarButtonList"
@@ -31,8 +39,11 @@ nav {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+span:hover {
+  cursor: default;
+}
+
 .greeting {
-  font-size: 1rem;
   margin-right: auto;
 }
 

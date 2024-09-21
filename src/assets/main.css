@@ -3,11 +3,11 @@
 #app {
   min-width: 100vw;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   font-weight: normal;
   background: radial-gradient(circle, var(--black-color) 0%, var(--background-color) 100%);
   color: var(--text-color);

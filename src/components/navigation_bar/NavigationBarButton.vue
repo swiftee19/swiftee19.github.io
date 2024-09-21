@@ -24,7 +24,7 @@ defineProps({
   text-decoration: none;
   transform-origin: left;
   transition: var(--transition-duration);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .navbar-button:hover {
