@@ -39,12 +39,13 @@ defineProps({
   width: 100%;
   height: 1px;
   background: var(--text-color);
-  transition: var(--transition-duration);
   transform: scaleX(0);
-  transform-origin: left;
+  transform-origin: bottom right;
+  transition: transform var(--transition-duration) var(--transition-timing-function);
 }
 
 .navbar-button:hover::after {
   transform: scaleX(1);
+  transform-origin: bottom left;
 }
 </style>

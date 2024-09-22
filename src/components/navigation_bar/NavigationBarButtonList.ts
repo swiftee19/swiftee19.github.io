@@ -14,5 +14,10 @@ export const NavigationBarButtonList: NavigationBarButtonData[] = [
     id: 'projects',
     buttonText: 'Projects',
     viewDestination: '/projects'
+  },
+  {
+    id: 'experience',
+    buttonText: 'Experience',
+    viewDestination: '/experience'
   }
 ]

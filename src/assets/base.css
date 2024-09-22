@@ -4,13 +4,16 @@
   --secondary-color: #98ded9;
   --background-color: #01053a;
   --text-color: #c7ffd8;
-  --gold-color: #c5b358;
   --shadow-color: rgba(0, 0, 0, 0.1);
+  --gold-color: #d8b700;
+  --black-color: #000;
+  --white-color: #fff;
+  --cyan-color: #00f7ff;
+  --purple-color: #481e96;
+  --gray-color: #282828;
   --border-radius: 0.25rem;
   --transition-duration: 0.3s;
   --transition-timing-function: ease-in-out;
-  --black-color: #000;
-  --white-color: #fff;
 }
 
 *,

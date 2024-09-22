@@ -3,13 +3,9 @@ const greetingMessageList = [
   'Hi',
   'Hey',
   'Greetings',
-  'Good day',
   'Howdy',
   'Salutations',
-  "What's up",
   'Hiya',
-  'Hey there',
-  'Hello there',
   'Hello'
 ]
 
