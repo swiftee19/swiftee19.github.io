@@ -20,40 +20,20 @@ defineProps({
 </script>
 
 <template>
-  <a class="contact-button" :href="ContactLink" target="_blank" rel="noopener noreferrer">
-    <img :src="ImagePath" alt="Contact Icon" />
-    <p class="contact-description">{{ ContactDescription }}</p>
+  <a class="contact-button flex justify-center items-center gap-2 relative" :href="ContactLink" target="_blank" rel="noopener noreferrer">
+    <img :src="ImagePath" alt="Contact Icon" class="w-6 h-6" />
+    <p class="contact-description text-0 hover:text-base transition-all duration-300">{{ ContactDescription }}</p>
   </a>
 </template>
 
+
 <style scoped>
-/* this is to override the basic styling of an anchor tag in main.css */
+/* to override the default styles of the anchor tag */
 a:hover::after {
   transform: scaleX(0);
 }
 
-.contact-button {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-  height: fit-content;
-  width: fit-content;
-}
-
 .contact-button:hover .contact-description {
   font-size: 1rem;
-}
-
-.contact-description {
-  font-size: 0;
-  transition: font 0.3s;
-  transform-origin: left;
-}
-
-img {
-  width: 1.5rem;
-  height: 1.5rem;
 }
 </style>

@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <span>{{ alphabet }}</span>
+  <span class="inline-block text-lg text-text">{{ alphabet }}</span>
 </template>
 
 <style scoped>
@@ -22,12 +22,6 @@ defineProps({
   100% {
     transform: translateY(0);
   }
-}
-
-span {
-  display: inline-block;
-  font-size: 1.2rem;
-  color: var(--text-color);
 }
 
 span:hover {

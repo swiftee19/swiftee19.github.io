@@ -4,19 +4,19 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <main>
-    <div class="profile-picture-container">
+  <main class="flex-1 h-full w-full flex justify-center items-center gap-8 py-4 px-20">
+    <div class="relative p-2 bg-white flex justify-center items-center overflow-hidden object-contain shadow-sm rounded-3xl">
       <img
-        src="/Yuta_Okkotsu_29-removebg-preview.png"
+        src="/Yuta_Okkotsu.png"
         alt="Profile Picture"
-        class="profile-picture"
+        class="h-[70vh]"
       />
     </div>
-    <div class="right-side-content-container">
-      <div class="text-container">
-        <h1 class="welcome-message"><AccentedText>Welcome to my portofolio</AccentedText>!</h1>
+    <div class="h-[70vh] w-[70%] flex flex-col justify-start items-start">
+      <div class="text-container w-full flex flex-col justify-start items-start">
+        <h1 class="text-5xl leading-[4rem]"><AccentedText>Welcome to my portofolio</AccentedText>!</h1>
         <p>
-          My name is <strong>Irvin</strong> and I am a tech enthusiast. I am currently learning new
+          I'm Irvin and I am a tech enthusiast. I am currently learning new
           and popular technologies while constantly improving my skills.
         </p>
         <p>I am a genuinely curious person and enjoy learning and collaborating.</p>
@@ -25,76 +25,16 @@ import { RouterLink } from 'vue-router'
           <RouterLink :to="`/projects`">projects</RouterLink>!
         </p>
       </div>
-      <div class="skills-container"></div>
+      <div class="h-full w-full py-4 flex justify-between items-start">
+        <div class="h-full flex flex-col gap-4">
+          
+        </div>
+      </div>
     </div>
   </main>
 </template>
 
 <style scoped>
-main {
-  flex: 1;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  padding: 1rem 5rem;
-}
-
-.profile-picture-container {
-  position: relative;
-  height: fit-content;
-  width: fit-content;
-  padding: 1rem;
-  background-color: #faf0e6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  object-fit: contain;
-  box-shadow: 0 0 10px var(--shadow-color);
-  border-radius: 50px;
-}
-
-.profile-picture {
-  height: 70vh;
-}
-
-.right-side-content-container {
-  height: 70vh;
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-}
-
-.text-container {
-  height: fit-content;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-}
-
-.welcome-message {
-  position: relative;
-  font-size: 2rem;
-  line-height: 4rem;
-  color: var(--text-color);
-}
-
-.skills-container {
-  height: 100%;
-  width: 100%;
-  padding-block: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-}
-
 p {
   font-size: 1.3rem;
   line-height: 2rem;

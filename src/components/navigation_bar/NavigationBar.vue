@@ -9,15 +9,15 @@ const greetingMessageLetters = greetingMessage.split('')
 </script>
 
 <template>
-  <nav>
-    <span class="greeting">
+  <nav class="w-screen flex justify-end items-center py-4 px-8 shadow-md">
+    <span class="mr-auto hover:cursor-default">
       <GreetingMessageAlphabet
         v-for="(letter, index) in greetingMessageLetters"
         :key="index"
         :alphabet="letter"
       />
     </span>
-    <div class="buttons">
+    <div class="buttons flex gap-4">
       <NavigationBarButton
         v-for="buttonData in NavigationBarButtonList"
         :key="buttonData.id"
@@ -27,28 +27,3 @@ const greetingMessageLetters = greetingMessage.split('')
     </div>
   </nav>
 </template>
-
-<style scoped>
-nav {
-  width: 100vw;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: transparent;
-  box-shadow: 0 2px 4px var(--shadow-color);
-}
-
-span:hover {
-  cursor: default;
-}
-
-.greeting {
-  margin-right: auto;
-}
-
-.buttons {
-  display: flex;
-  gap: 1rem;
-}
-</style>

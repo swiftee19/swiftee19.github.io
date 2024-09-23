@@ -4,11 +4,11 @@
 
 <style scoped>
 span {
-  background: linear-gradient(90deg, var(--gold-color), var(--purple-color), var(--gold-color));
+  background: linear-gradient(90deg, var(--gold-color), var(--cyan-color), var(--gold-color));
   background-size: 300%;
   background-clip: text;
   color: transparent;
-  animation: slide 7s infinite alternate linear;
+  animation: slide 5s infinite alternate linear;
 }
 
 @keyframes slide {

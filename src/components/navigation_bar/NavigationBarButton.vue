@@ -14,23 +14,10 @@ defineProps({
 </script>
 
 <template>
-  <RouterLink :to="viewDestination" class="navbar-button">{{ buttonText }}</RouterLink>
+  <RouterLink :to="viewDestination" class="navbar-button relative text-text decoration-0 text-lg transition-all duration-300 hover:cursor-pointer">{{ buttonText }}</RouterLink>
 </template>
 
 <style>
-.navbar-button {
-  position: relative;
-  color: var(--text-color);
-  text-decoration: none;
-  transform-origin: left;
-  transition: var(--transition-duration);
-  font-size: 1.2rem;
-}
-
-.navbar-button:hover {
-  cursor: pointer;
-}
-
 .navbar-button::after {
   content: '';
   position: absolute;
