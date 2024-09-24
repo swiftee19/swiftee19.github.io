@@ -9,7 +9,7 @@ const greetingMessageLetters = greetingMessage.split('')
 </script>
 
 <template>
-  <nav class="w-screen flex justify-end items-center py-4 px-8 shadow-md">
+  <nav class="fixed top-0 left-0 w-screen flex justify-end items-center py-4 px-8 shadow-md">
     <span class="mr-auto hover:cursor-default">
       <GreetingMessageAlphabet
         v-for="(letter, index) in greetingMessageLetters"
