@@ -8,7 +8,7 @@ span {
   background-size: 300%;
   background-clip: text;
   color: transparent;
-  animation: slide 5s infinite alternate linear;
+  animation: slide 4s infinite alternate linear;
 }
 
 @keyframes slide {

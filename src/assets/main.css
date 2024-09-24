@@ -3,6 +3,42 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes beatingBackground {
+  0%{
+    background: radial-gradient(circle, var(--black-color) 0%, var(--background-color) 100%);
+  }
+  10%{
+    background: radial-gradient(circle, var(--black-color) 10%, var(--background-color) 100%);
+  }
+  20%{
+    background: radial-gradient(circle, var(--black-color) 20%, var(--background-color) 100%);
+  }
+  30%{
+    background: radial-gradient(circle, var(--black-color) 30%, var(--background-color) 100%);
+  }
+  40%{
+    background: radial-gradient(circle, var(--black-color) 40%, var(--background-color) 100%);
+  }
+  50%{
+    background: radial-gradient(circle, var(--black-color) 50%, var(--background-color) 100%);
+  }
+  60%{
+    background: radial-gradient(circle, var(--black-color) 40%, var(--background-color) 100%);
+  }
+  70%{
+    background: radial-gradient(circle, var(--black-color) 30%, var(--background-color) 100%);
+  }
+  80%{
+    background: radial-gradient(circle, var(--black-color) 20%, var(--background-color) 100%);
+  }
+  90%{
+    background: radial-gradient(circle, var(--black-color) 10%, var(--background-color) 100%);
+  }
+  100%{
+    background: radial-gradient(circle, var(--black-color) 0%, var(--background-color) 100%);
+  }
+}
+
 #app {
   min-width: 100vw;
   min-height: 100vh;
@@ -12,11 +48,13 @@
   display: flex;
   flex-direction: column;
   font-weight: normal;
-  background: radial-gradient(circle, var(--black-color) 0%, var(--background-color) 100%);
   color: var(--text-color);
+  background: radial-gradient(circle, var(--black-color) 0%, var(--background-color) 100%);
   transition:
+    background 0.5s,
     background-color 0.5s,
     color 0.5s;
+  animation: beatingBackground 5s infinite ease-in-out alternate;
 }
 
 a {
