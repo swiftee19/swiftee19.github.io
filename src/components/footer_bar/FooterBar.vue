@@ -4,8 +4,10 @@ import ContactButton from './ContactButton.vue'
 </script>
 
 <template>
-  <div class="fixed left-0 bottom-0 w-screen flex justify-center items-center py-2 gap-2">
-    <div class="contact-container flex content-center items-center gap-8 p-4 bg-gray rounded-md shadow-md">
+  <div class="flex w-full justify-center items-center pb-4">
+    <div
+      class="flex content-center items-center gap-8 p-4 bg-gray rounded-md shadow-md"
+    >
       <ContactButton
         v-for="contact in ContactListData"
         :key="contact.id"

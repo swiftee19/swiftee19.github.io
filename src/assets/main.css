@@ -3,59 +3,35 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes beatingBackground {
-  0%{
-    background: radial-gradient(circle, var(--black-color) 0%, var(--background-color) 100%);
-  }
-  10%{
-    background: radial-gradient(circle, var(--black-color) 10%, var(--background-color) 100%);
-  }
-  20%{
-    background: radial-gradient(circle, var(--black-color) 20%, var(--background-color) 100%);
-  }
-  30%{
-    background: radial-gradient(circle, var(--black-color) 30%, var(--background-color) 100%);
-  }
-  40%{
-    background: radial-gradient(circle, var(--black-color) 40%, var(--background-color) 100%);
-  }
-  50%{
-    background: radial-gradient(circle, var(--black-color) 50%, var(--background-color) 100%);
-  }
-  60%{
-    background: radial-gradient(circle, var(--black-color) 40%, var(--background-color) 100%);
-  }
-  70%{
-    background: radial-gradient(circle, var(--black-color) 30%, var(--background-color) 100%);
-  }
-  80%{
-    background: radial-gradient(circle, var(--black-color) 20%, var(--background-color) 100%);
-  }
-  90%{
-    background: radial-gradient(circle, var(--black-color) 10%, var(--background-color) 100%);
-  }
-  100%{
-    background: radial-gradient(circle, var(--black-color) 0%, var(--background-color) 100%);
-  }
-}
 
 #app {
-  min-width: 100vw;
+  position: relative;
+  width: 100%; /* Changed from min-width: 100vw */
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  font-weight: normal;
+  overflow-x: hidden;
   color: var(--text-color);
-  background: radial-gradient(circle, var(--black-color) 0%, var(--background-color) 100%);
+  background: radial-gradient(circle, var(--black-color) 60%, var(--background-color) 100%);
   transition:
     background 0.5s,
     background-color 0.5s,
     color 0.5s;
   animation: beatingBackground 5s infinite ease-in-out alternate;
 }
+
+/* Ensure all elements use border-box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Ensure all direct children of #app don't exceed its width */
+/* #app > * {
+  max-width: 100%;
+} */
+
+/* to debug layout size issues by adding a red outline to all elements */
+/* * {
+  outline: 1px solid red !important;
+} */
 
 a {
   position: relative;
@@ -80,4 +56,17 @@ a::after {
 a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: var(--gold-color);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-color);
 }
