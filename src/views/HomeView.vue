@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <main class="min-h-screen w-full flex justify-center items-center">
+  <main class="min-h-screen w-full flex justify-center items-center py-20">
     <div class="w-full max-w-4xl flex flex-col justify-start items-start gap-8">
       <div class="w-full flex flex-col justify-start items-start gap-6">
         <div class="w-full flex items-center justify-center">
