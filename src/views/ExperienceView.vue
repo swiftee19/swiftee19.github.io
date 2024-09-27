@@ -8,8 +8,8 @@ const sortedExperienceDataList = ExperienceDataList.sort((a, b) => {
 </script>
 
 <template>
-    <main class="w-full py-20 overflow-y-clip flex items-center justify-center">
-        <div class="w-full min-h-full flex flex-col px-20 items-center justify-between gap-20">
+    <main class="min-h-screen w-full py-20 overflow-y-clip flex items-center justify-center">
+        <div class="w-full flex flex-col px-20 items-center justify-between gap-20">
             <ExperienceBlock v-for="experience in ExperienceDataList" :key="experience.id"
                 :ExperienceTitle="experience.ExperienceTitle" :ExperienceStartDate="experience.ExperienceStartDate"
                 :ExperienceEndDate="experience.ExperienceEndDate" :ExperienceDescription="experience.ExperienceDescription"

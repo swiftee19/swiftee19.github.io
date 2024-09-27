@@ -27,7 +27,7 @@ defineProps({
 
 <template>
     <div class="flex h-fit w-full justify-between">
-        <div class="flex flex-col w-1/2">
+        <div class="flex flex-col w-1/2 max-w-[50%] text-wrap">
             <AccentedText>
                 <h1 class="text-4xl font-bold">{{ ExperienceTitle }}</h1>
             </AccentedText>
