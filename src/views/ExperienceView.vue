@@ -1,109 +1,19 @@
+<script setup lang="ts">
+import { ExperienceDataList } from '../components/experience_view/ExperienceData'
+import ExperienceBlock from '../components/experience_view/ExperienceBlock.vue'
+
+const sortedExperienceDataList = ExperienceDataList.sort((a, b) => {
+    return new Date(b.ExperienceStartDate).getTime() - new Date(a.ExperienceStartDate).getTime()
+})
+</script>
+
 <template>
     <main class="w-full py-20 overflow-y-clip flex items-center justify-center">
-        <div class="w-full min-h-full flex flex-col px-20 items-center justify-between">
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
-            <p>tes</p>
+        <div class="w-full min-h-full flex flex-col px-20 items-center justify-between gap-20">
+            <ExperienceBlock v-for="experience in ExperienceDataList" :key="experience.id"
+                :ExperienceTitle="experience.ExperienceTitle" :ExperienceStartDate="experience.ExperienceStartDate"
+                :ExperienceEndDate="experience.ExperienceEndDate" :ExperienceDescription="experience.ExperienceDescription"
+                :ExperienceImages="experience.ExperienceImages" />
         </div>
     </main>
 </template>

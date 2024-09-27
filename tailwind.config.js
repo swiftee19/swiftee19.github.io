@@ -5,18 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx,vue}",
   ],
   theme: {
-    colors: {
-      'primary': '#0b2f9f',
-      'secondary': '#98ded9',
-      'background': '#01053a',
-      'text': '#c7ffd8',
-      'gold': '#d8b700',
-      'black': '#000',
-      'white': '#faf0e6',
-      'cyan': '#00f7ff',
-      'purple': '#481e96',
-      'gray': '#282828'
-    },
+    
     fontFamily:{
       inter: ['Inter', 'sans-serif'],
     },
@@ -33,6 +22,18 @@ export default {
     extend: {
       fontSize:{
         0:'0',
+      },
+      colors: {
+        'primary': '#0b2f9f',
+        'secondary': '#98ded9',
+        'background': '#01053a',
+        'text': '#c7ffd8',
+        'gold': '#d8b700',
+        'black': '#000',
+        'white': '#faf0e6',
+        'cyan': '#00f7ff',
+        'purple': '#481e96',
+        'gray': '#282828'
       },
     },
     
