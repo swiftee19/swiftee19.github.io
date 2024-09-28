@@ -70,3 +70,7 @@ a:hover::after {
 ::-webkit-scrollbar-track {
   background: black;
 }
+
+a:hover{
+  cursor: pointer;
+}
