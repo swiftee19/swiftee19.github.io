@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onUnmounted, watch } from 'vue'
 import { NavigationBarButtonList } from './NavigationBarButtonList'
+import { useRoute } from 'vue-router'
 import NavigationBarButton from './NavigationBarButton.vue'
 import getRandomGreetingMessage from './GreetingMessageList'
 import GreetingMessageAlphabet from './GreetingMessageAlphabet.vue'
@@ -10,6 +11,8 @@ const greetingMessageLetters = greetingMessage.split('')
 
 const isScrolled = ref(false)
 const navbarHeight = ref(0)
+
+const route = useRoute()
 
 const handleScroll = () => {
   if (window.scrollY > navbarHeight.value) {
@@ -29,6 +32,10 @@ onMounted(() => {
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
+})
+
+watch(route, (newRoute) => {
+  console.log(newRoute.path)
 })
 </script>
 
@@ -50,6 +57,7 @@ onUnmounted(() => {
         :key="buttonData.id"
         :buttonText="buttonData.buttonText"
         :viewDestination="buttonData.viewDestination"
+        :currentRoute="route.path"
       />
     </div>
   </nav>

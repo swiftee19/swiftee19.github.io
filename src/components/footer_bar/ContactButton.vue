@@ -22,7 +22,7 @@ defineProps({
 <template>
   <a class="contact-button flex justify-center items-center gap-2 relative" :href="ContactLink" target="_blank" rel="noopener noreferrer">
     <img :src="ImagePath" alt="Contact Icon" class="w-6 h-6" />
-    <p class="contact-description text-0 hover:text-base transition-all duration-300">{{ ContactDescription }}</p>
+    <p class="contact-description text-0 hover:text-base transition-all duration-300 text-gold">{{ ContactDescription }}</p>
   </a>
 </template>
 

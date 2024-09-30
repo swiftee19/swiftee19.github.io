@@ -9,12 +9,18 @@ defineProps({
   viewDestination: {
     type: String,
     required: true
+  },
+  currentRoute: {
+    type: String,
+    required: true
   }
 })
 </script>
 
 <template>
-  <RouterLink :to="viewDestination" class="navbar-button relative text-text decoration-0 text-lg transition-all duration-300 hover:cursor-pointer">{{ buttonText }}</RouterLink>
+  <RouterLink :to="viewDestination"
+    class="navbar-button relative text-text decoration-0 text-lg transition-all duration-300 hover:cursor-pointer hover:text-gold"
+    :class="{ 'text-gold': viewDestination==currentRoute, 'text-text': !(viewDestination==currentRoute) }">{{ buttonText }}</RouterLink>
 </template>
 
 <style>
@@ -25,7 +31,7 @@ defineProps({
   left: 0;
   width: 100%;
   height: 1px;
-  background: var(--text-color);
+  background: var(--gold-color);
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform var(--transition-duration) var(--transition-timing-function);

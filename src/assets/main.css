@@ -35,7 +35,7 @@
 
 a {
   position: relative;
-  color: var(--gold-color);
+  color: var(--cyan-color);
   text-decoration: none;
   transition: var(--transition-duration);
 }
@@ -47,7 +47,7 @@ a::after {
   left: 0;
   width: 100%;
   height: 1px;
-  background: var(--gold-color);
+  background: var(--cyan-color);
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform var(--transition-duration) var(--transition-timing-function);
