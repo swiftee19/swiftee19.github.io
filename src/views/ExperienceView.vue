@@ -9,7 +9,7 @@ const sortedExperienceDataList = ExperienceDataList.sort((a, b) => {
 
 <template>
     <main class="min-h-screen w-full py-20 overflow-y-clip flex flex-col items-center justify-center">
-        <h1 class="w-[90%] text-4xl font-bold pb-10">My Journey</h1>
+        <h1 class="w-[90%] text-5xl font-bold pb-10">My Journey</h1>
         <div class="w-4/5 flex flex-col items-center justify-between relative">
             <!-- timeline line -->
             <span class="absolute bottom-0 -left-[1.68rem] w-1.5 z-0 bg-gray rounded-b-lg"
