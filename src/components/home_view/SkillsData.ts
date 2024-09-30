@@ -58,6 +58,10 @@ export const SkillsData: SkillData[] = [
                 skillIconPath: '/mongodb_icon.svg'
             },
             {
+                skillName: 'Microsoft SQL',
+                skillIconPath: '/microsoftsql_icon.svg'
+            },
+            {
                 skillName: 'MySQL',
                 skillIconPath: '/mysql_icon.svg'
             },
