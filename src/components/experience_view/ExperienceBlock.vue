@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
 import AccentedText from '../general/AccentedText.vue'
-import type { transform } from 'typescript';
 
 defineProps({
     ExperienceTitle: {
