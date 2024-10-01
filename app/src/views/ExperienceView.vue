@@ -3,13 +3,12 @@ import { ExperienceDataList } from '../components/experience_view/ExperienceData
 import ExperienceBlock from '../components/experience_view/ExperienceBlock.vue'
 
 const sortedExperienceDataList = ExperienceDataList.sort((a, b) => {
-    return new Date(b.ExperienceStartDate).getTime() - new Date(a.ExperienceStartDate).getTime()
-})
+        return new Date(b.ExperienceStartDate).getTime() - new Date(a.ExperienceStartDate).getTime()
+    })
 </script>
 
 <template>
     <main class="min-h-screen w-full py-20 overflow-y-clip flex flex-col items-center justify-center">
-        <h1 class="w-[90%] text-5xl font-bold pb-14 text-text">My Experience</h1>
         <div class="w-4/5 flex flex-col items-center justify-between relative">
             <!-- timeline line -->
             <span class="absolute bottom-0 -left-[1.68rem] w-1.5 z-0 bg-gray rounded-b-lg"
@@ -19,11 +18,11 @@ const sortedExperienceDataList = ExperienceDataList.sort((a, b) => {
                     <div class="relative">
                         <!-- timeline bullet points -->
                         <span
-                            class="absolute -left-8 top-1/2 -translate-y-1/2 bg-stone-400 size-4 rounded-full z-10"></span>
-                        <h1 class="text-4xl font-bold text-stone-400">Upcoming</h1>
+                            class="absolute -left-8 top-1/2 -translate-y-1/2 bg-stone-600 size-4 rounded-full z-10"></span>
+                        <h1 class="text-4xl font-bold text-stone-600">Upcoming</h1>
                     </div>
                 </div>
-                <p class="w-1/2 text-lg text-stone-400">Let's work together on building a better future!</p>
+                <p class="w-1/2 text-lg text-stone-600">Let's work together on building a better future!</p>
             </div>
             <ExperienceBlock v-for="(experience) in sortedExperienceDataList" :key="experience.id"
                 :ExperienceTitle="experience.ExperienceTitle" :ExperienceStartDate="experience.ExperienceStartDate"

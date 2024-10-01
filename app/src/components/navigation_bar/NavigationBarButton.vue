@@ -19,8 +19,8 @@ defineProps({
 
 <template>
   <RouterLink :to="viewDestination"
-    class="navbar-button relative text-text decoration-0 text-lg transition-all duration-300 hover:cursor-pointer hover:text-gold"
-    :class="{ 'text-gold': viewDestination==currentRoute, 'text-text': !(viewDestination==currentRoute) }">{{ buttonText }}</RouterLink>
+    class="navbar-button relative decoration-0 text-lg transition-all duration-300 hover:cursor-pointer hover:text-gold"
+    :class="{ 'text-gold': viewDestination == currentRoute, 'text-text': viewDestination != currentRoute }">{{ buttonText }}</RouterLink>
 </template>
 
 <style>
