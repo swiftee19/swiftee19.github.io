@@ -27,7 +27,7 @@ export default {
         'primary': '#0b2f9f',
         'secondary': '#98ded9',
         'background': '#01053a',
-        'text': '#c7ffd8',
+        'text': '#ffffff',
         'gold': '#d8b700',
         'black': '#000',
         'white': '#faf0e6',
