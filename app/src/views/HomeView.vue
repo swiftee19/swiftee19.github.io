@@ -12,8 +12,11 @@ import { RouterLink } from 'vue-router'
             alt="profile picture">
         </div>
         <div class="flex flex-col gap-2 items-start">
-          <div class="flex items-baseline gap-2">
-            <p class="text-2xl md:text-3xl">Hi, I'm</p>
+          <div class="flex gap-2 h-full items-end">
+            <div class="flex flex-col">
+              <p class="text-2xl md:text-3xl">Hi,</p>
+              <p class="text-2xl md:text-3xl">I'm</p>
+            </div>
             <h1 class="text-4xl md:text-6xl lg:text-8xl">
               <AccentedText>Irvin</AccentedText>!
             </h1>
