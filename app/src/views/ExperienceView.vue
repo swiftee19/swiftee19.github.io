@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { ExperienceData, ExperienceDataList } from '../components/experience_view/ExperienceData'
+import type { ExperienceData } from '../components/experience_view/ExperienceData'
+import { ExperienceDataList } from '../components/experience_view/ExperienceData'
 import ExperienceBlock from '../components/experience_view/ExperienceBlock.vue'
 import { ref } from 'vue';
 
