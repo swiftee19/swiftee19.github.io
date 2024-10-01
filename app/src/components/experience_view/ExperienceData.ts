@@ -1,4 +1,4 @@
-interface ExperienceData {
+export interface ExperienceData {
     id: string
     ExperienceTitle: string
     ExperienceStartDate: string

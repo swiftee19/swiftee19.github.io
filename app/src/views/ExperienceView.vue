@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import { ExperienceDataList } from '../components/experience_view/ExperienceData'
+import { ExperienceData, ExperienceDataList } from '../components/experience_view/ExperienceData'
 import ExperienceBlock from '../components/experience_view/ExperienceBlock.vue'
+import { ref } from 'vue';
 
-const sortedExperienceDataList = ExperienceDataList.sort((a, b) => {
+const sortedExperienceDataList = ref<ExperienceData[]>(
+    ExperienceDataList.sort((a, b) => {
         return new Date(b.ExperienceStartDate).getTime() - new Date(a.ExperienceStartDate).getTime()
     })
+)
 </script>
 
 <template>

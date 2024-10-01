@@ -8,7 +8,7 @@ import { RouterLink } from 'vue-router'
     <div class="w-full max-w-4xl flex flex-col justify-start items-start gap-8">
       <div class="w-full flex flex-col justify-start items-start gap-6">
         <div class="w-full flex items-center justify-center">
-          <img class="rounded-full object-cover w-48 h-48 md:w-64 md:h-64 lg:w-96 lg:h-96" src="/kelvin.jpg"
+          <img class="rounded-full object-cover w-48 h-48 md:w-64 md:h-64 lg:w-96 lg:h-96" src="/irvin_cropped.jpg"
             alt="profile picture">
         </div>
         <div class="flex flex-col gap-2 items-start">
@@ -19,7 +19,7 @@ import { RouterLink } from 'vue-router'
             </h1>
           </div>
           <p class="text-lg md:text-xl lg:text-2xl mt-4">
-            I'm a tech lover who's always about exploring new and exciting tools and tech. I enjoy sharpening my skills
+            I'm a learner who's always about exploring new and exciting technologies. I enjoy sharpening my skills
             and
             staying on top of trends. Curiosity drives me, and I love learning and working with others.
           </p>
