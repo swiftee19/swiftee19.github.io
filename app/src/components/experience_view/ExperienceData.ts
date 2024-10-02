@@ -20,5 +20,5 @@ export const ExperienceDataList: ExperienceData[] = [
         ExperienceStartDate: 'January 2024',
         ExperienceEndDate: 'Present',
         ExperienceDescription: 'Maintain and manage the database for <a target="_blank" href="https://binus.ac.id/">Bina Nusantara University</a>. This includes optimizing the database and the jobs running on it as well as coordinating with other divisions to ensure data availability and consistency.'
-    }
+    },
 ]
