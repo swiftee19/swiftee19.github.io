@@ -15,12 +15,17 @@ defineProps({
     required: true
   }
 })
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
 </script>
 
 <template>
-  <RouterLink :to="viewDestination"
+  <RouterLink :to="viewDestination" @click="scrollToTop"
     class="navbar-button relative decoration-0 text-lg transition-all duration-300 hover:cursor-pointer hover:text-gold"
-    :class="{ 'text-gold': viewDestination == currentRoute, 'text-text': viewDestination != currentRoute }">{{ buttonText }}</RouterLink>
+    :class="{ 'text-gold': viewDestination == currentRoute, 'text-text': viewDestination != currentRoute }">{{
+      buttonText }}</RouterLink>
 </template>
 
 <style>

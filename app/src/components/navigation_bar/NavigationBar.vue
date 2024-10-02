@@ -5,6 +5,8 @@ import { useRoute } from 'vue-router'
 import NavigationBarButton from './NavigationBarButton.vue'
 import getRandomGreetingMessage from './GreetingMessageList'
 import GreetingMessageAlphabet from './GreetingMessageAlphabet.vue'
+import { ContactListData } from '../footer_bar/ContactListData'
+import ContactButton from '../footer_bar/ContactButton.vue'
 
 const greetingMessage = getRandomGreetingMessage() + ', Visitor!'
 const greetingMessageLetters = greetingMessage.split('')
@@ -41,17 +43,17 @@ watch(route, (newRoute) => {
 
 <template>
   <nav 
-    class="fixed top-0 left-0 w-screen flex justify-end items-center py-4 px-8 transition-colors duration-300 ease-in-out"
+    class="fixed top-0 left-0 w-screen flex justify-between items-center py-4 px-8 transition-colors duration-300 ease-in-out"
     :class="{ 'backdrop-blur-lg bg-black/30': isScrolled, 'bg-transparent': !isScrolled }"
   >
-    <span class="mr-auto hover:cursor-default">
+    <span class="hover:cursor-default">
       <GreetingMessageAlphabet
         v-for="(letter, index) in greetingMessageLetters"
         :key="index"
         :alphabet="letter"
       />
     </span>
-    <div class="buttons flex gap-6">
+    <div class="flex gap-6">
       <NavigationBarButton
         v-for="buttonData in NavigationBarButtonList"
         :key="buttonData.id"
@@ -62,6 +64,7 @@ watch(route, (newRoute) => {
     </div>
   </nav>
 </template>
+
 
 <style scoped>
 nav {

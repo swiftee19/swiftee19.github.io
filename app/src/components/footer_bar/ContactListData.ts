@@ -8,7 +8,7 @@ interface ContactData {
 export const ContactListData: ContactData[] = [
   {
     id: 'github',
-    ImagePath: '/github_icon.svg',
+    ImagePath: '/github_icon_dark_mode.svg',
     ContactDescription: 'swiftee19',
     ContactLink: 'https://github.com/swiftee19'
   },
