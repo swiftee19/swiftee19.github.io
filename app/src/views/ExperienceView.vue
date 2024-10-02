@@ -12,7 +12,7 @@ const sortedExperienceDataList = ref<ExperienceData[]>(
 </script>
 
 <template>
-    <main class="min-h-screen w-full py-20 overflow-y-clip flex flex-col items-center justify-center">
+    <main class="min-h-screen w-full py-20 flex flex-col items-center justify-center">
         <div class="w-4/5 flex flex-col items-center justify-between relative">
             <!-- timeline line -->
             <span class="absolute bottom-0 -left-[1.68rem] w-1.5 z-0 bg-gray rounded-b-lg"
