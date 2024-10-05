@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation } from 'swiper/modules'
 import type { Project } from './ProjectsData'
 import AccentedText from '../general/AccentedText.vue'
+import HoverableIcon from './HoverableIcon.vue'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -37,10 +38,14 @@ defineProps({
       </Swiper>
     </div>
     <div class="w-4/5 h-fit flex justify-between mt-4">
-      <div class="flex flex-col w-[40%]">
+      <div class="flex flex-col w-[40%] gap-2">
         <p class="text-3xl text-secondary">Tech Stack</p>
         <div class="flex gap-2 flex-wrap">
-          
+          <HoverableIcon
+            v-for="tech in project.technology_stack"
+            :key="tech.id"
+            :image="tech.image"
+            :iconName="tech.name"/>
         </div>
       </div>
       <div class="flex flex-col w-[58%]">
