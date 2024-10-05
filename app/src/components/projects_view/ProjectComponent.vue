@@ -32,8 +32,8 @@ defineProps({
         :navigation="true"
         class="h-fit w-full"
       >
-        <SwiperSlide v-for="(image, index) in project.images" :key="index">
-          <SingleImageComponentForCarousel :image="image" />
+        <SwiperSlide v-for="(media, index) in project.media" :key="index">
+          <SingleImageComponentForCarousel :media="media" />
         </SwiperSlide>
       </Swiper>
     </div>
