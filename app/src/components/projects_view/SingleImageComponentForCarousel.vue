@@ -5,7 +5,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="size-full object-contain flex-shrink-0 flex items-center justify-center">
-        <img class="size-11/12 object-contain flex-shrink-0 rounded-md" :src="image" alt="image">
+    <div class="w-full h-fit flex-shrink-0 flex items-center justify-center">
+        <img class="w-4/5 h-auto max-h-[80vh] object-contain flex-shrink-0 rounded-md" :src="image" alt="project image">
     </div>
 </template>

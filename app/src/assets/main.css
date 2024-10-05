@@ -11,10 +11,7 @@
   color: var(--text-color);
   background: radial-gradient(circle, var(--black-color) 60%, var(--background-color) 100%);
   transition:
-    background 0.5s,
-    background-color 0.5s,
     color 0.5s;
-  animation: beatingBackground 5s infinite ease-in-out alternate;
 }
 
 /* Ensure all elements use border-box sizing */
