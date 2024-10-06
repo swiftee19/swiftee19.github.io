@@ -30,16 +30,21 @@ export const ProjectsData: Array<Project> = [
             },
             {
                 id: 2,
+                name: "Vite",
+                image: "/vite_icon.svg"
+            },
+            {
+                id: 3,
                 name: "TypeScript",
                 image: "/typescript_icon.svg"
             },
             {
-                id: 3,
+                id: 4,
                 name: "Motoko",
                 image: "/motoko_icon.webp"
             },
             {
-                id: 4,
+                id: 5,
                 name: "Web3",
                 image: "/web3_icon.svg"
             },
