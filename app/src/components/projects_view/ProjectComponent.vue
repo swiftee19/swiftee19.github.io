@@ -5,6 +5,7 @@ import { Navigation } from 'swiper/modules'
 import type { Project } from './ProjectsData'
 import AccentedText from '../general/AccentedText.vue'
 import HoverableIcon from './HoverableIcon.vue'
+import SeeMoreComponent from './SeeMoreComponent.vue'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -47,7 +48,7 @@ defineProps({
           :image="tech.image"
           :iconName="tech.name"/>
         </div>
-        <p class="text-3xl text-secondary">See More</p>
+        <SeeMoreComponent :project="project" />
       </div>
       <div class="flex flex-col w-[58%]">
         <p class="text-xl" v-html="project.description"></p>
