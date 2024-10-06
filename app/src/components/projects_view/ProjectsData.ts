@@ -48,7 +48,7 @@ export const ProjectsData: Array<Project> = [
     {
         id: 2,
         title: "MYkIR",
-        description: "A platform for seamless knowledge-sharing through vibrant discussions and insightful posts. Whether you're an expert or a curious learner, <a href='https://play.google.com/store/apps/details?id=edu.bluejack23_1.mykir_neo&hl=en_US' target='_blank'>MYkIR</a> connects you with like-minded individuals that learns subjects through conversing in <u>Spaces, each dedicated to a specific skill category or field of expertise</u>.",
+        description: "A platform for seamless knowledge-sharing through vibrant discussions and insightful posts. Whether you're an expert or a curious learner, <a href='https://play.google.com/store/apps/details?id=edu.bluejack23_1.mykir_neo&hl=en_US' target='_blank'>MYkIR</a> connects you with like-minded individuals that learns subjects through conversing in <u>Spaces</u>, each dedicated to a specific skill category or field of expertise.",
         media: ["/MYkIR/home_page.webp", "/MYkIR/inbox_page.webp", "/MYkIR/space_page_posts.webp", "/MYkIR/space_page_discussions.webp", "/MYkIR/post_detail.webp", "/MYkIR/discussion_room.webp"],
         link: "https://play.google.com/store/apps/details?id=edu.bluejack23_1.mykir_neo&hl=en_US",
         technology_stack: [
