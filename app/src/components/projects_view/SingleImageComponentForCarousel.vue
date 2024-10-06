@@ -44,7 +44,7 @@ const youTubeEmbedUrl = computed(() => {
     <!-- Image rendering -->
     <img
       v-if="isImage"
-      class="w-4/5 h-auto max-h-[80vh] object-contain flex-shrink-0 rounded-md"
+      class="w-4/5 h-auto max-h-[85vh] object-contain flex-shrink-0 rounded-md"
       :src="media"
       alt="project image"
     />
@@ -52,7 +52,7 @@ const youTubeEmbedUrl = computed(() => {
     <!-- Local video file rendering -->
     <video
       v-if="isVideo"
-      class="w-4/5 h-auto max-h-[80vh] object-contain flex-shrink-0 rounded-md"
+      class="w-4/5 h-auto max-h-[85vh] object-contain flex-shrink-0 rounded-md"
       controls
     >
       <source :src="media" />
@@ -62,7 +62,7 @@ const youTubeEmbedUrl = computed(() => {
     <!-- YouTube video rendering via iframe -->
     <iframe
       v-if="isYouTube"
-      class="w-4/5 h-auto max-h-[80vh] object-contain flex-shrink-0 rounded-md"
+      class="w-4/5 h-auto max-h-[85vh] object-contain flex-shrink-0 rounded-md"
       :src="youTubeEmbedUrl"
       frameborder="0"
       allowfullscreen
