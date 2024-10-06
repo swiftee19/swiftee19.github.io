@@ -1,10 +1,10 @@
 FROM node:22-alpine
 
-RUN mkdir -p /web-portofolio/app
+RUN mkdir -p /web-portfolio/app
 
-COPY ./app /web-portofolio/app
+COPY ./app /web-portfolio/app
 
-WORKDIR /web-portofolio/app
+WORKDIR /web-portfolio/app
 
 RUN npm install
 
