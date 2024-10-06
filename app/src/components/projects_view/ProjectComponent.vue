@@ -42,11 +42,12 @@ defineProps({
         <p class="text-3xl text-secondary">Tech Stack</p>
         <div class="flex gap-2 flex-wrap">
           <HoverableIcon
-            v-for="tech in project.technology_stack"
-            :key="tech.id"
-            :image="tech.image"
-            :iconName="tech.name"/>
+          v-for="tech in project.technology_stack"
+          :key="tech.id"
+          :image="tech.image"
+          :iconName="tech.name"/>
         </div>
+        <p class="text-3xl text-secondary">See More</p>
       </div>
       <div class="flex flex-col w-[58%]">
         <p class="text-xl" v-html="project.description"></p>

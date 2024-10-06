@@ -8,8 +8,9 @@ export interface Project {
     id: number;
     title: string;
     description: string;
-    media?: Array<string>; // Can be images or videos
-    link: string;
+    media?: Array<string>; // Can be images / videos / links
+    demo_link?: string;
+    github_repository_link?: string;
     technology_stack: Array<Technology>;
 }
 
@@ -21,7 +22,7 @@ export const ProjectsData: Array<Project> = [
         title: "Reef Rascals",
         description: "Reef Rascal is a <a>Web3🌐</a> turn-based game where players collect and battle rascals (fighters) in an ICP token-based environment. Players can gacha, buy, and sell their rascals on a decentralized marketplace. The game is built using React with <a href='https://www.typescriptlang.org/' target='_blank'>TypeScript</a> and <a href='https://github.com/dfinity/motoko' target='_blank'>Motoko</a> on the Internet Computer.",
         media: ["/reef_rascals/home_page.png", "/reef_rascals/aquarium_page.jpg", "/reef_rascals/battle_page.png", "/reef_rascals/marketplace_page.png", "/reef_rascals/profile_page.png"],
-        link: "#",
+        github_repository_link: "https://github.com/swiftee19/Reef-Rascals",
         technology_stack: [
             {
                 id: 1,
@@ -55,7 +56,8 @@ export const ProjectsData: Array<Project> = [
         title: "MYkIR",
         description: "A platform for seamless knowledge-sharing through vibrant discussions and insightful posts. Whether you're an expert or a curious learner, <a href='https://play.google.com/store/apps/details?id=edu.bluejack23_1.mykir_neo&hl=en_US' target='_blank'>MYkIR</a> connects you with like-minded individuals that learns subjects through conversing in <u>Spaces</u>, each dedicated to a specific skill category or field of expertise.",
         media: ["/MYkIR/home_page.webp", "/MYkIR/inbox_page.webp", "/MYkIR/space_page_posts.webp", "/MYkIR/space_page_discussions.webp", "/MYkIR/post_detail.webp", "/MYkIR/discussion_room.webp"],
-        link: "https://play.google.com/store/apps/details?id=edu.bluejack23_1.mykir_neo&hl=en_US",
+        demo_link: "https://play.google.com/store/apps/details?id=edu.bluejack23_1.mykir_neo&hl=en_US",
+        github_repository_link: "https://github.com/acad600/MOBILE-IR-MY-231",
         technology_stack: [
             {
                 id: 1,
@@ -84,7 +86,8 @@ export const ProjectsData: Array<Project> = [
     //     title: "faREbook",
     //     description: "A Facebook clone...",
     //     images: ["https://via.placeholder.com/150"],
-    //     link: "#",
+    //     demo_link: "#",
+    //     github_repository_link: "https://github.com/acad600/WEB-IR-231",
     //     technology_stack: [
     //         {
     //             id: 1,
@@ -123,7 +126,6 @@ export const ProjectsData: Array<Project> = [
         title: "Binus Virtual",
         description: "A Simulator game made for the purpose of exploring one of <a href='https://binus.ac.id/' target='_blank'>Bina Nusantara University</a>'s Campus. Made using Unreal Engine 5 and handcrafted, original assets created on Blender.",
         media: ["https://youtu.be/xR7AGusbtSc"],
-        link: "#",
         technology_stack: [
             {
                 id: 1,
